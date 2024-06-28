@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Платформа</title>
+</head>
+<body>
+    <!-- Заголовок -->
+    <h1>Тестовое задание</h1>
+
+    <!-- Форма заполнения -->
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title">Форма обратной связи</div>
+                <div class="popup__text">
+                    Заполните предоставленные поля и мы свяжемся с Вами в ближайшее время.
+                </div>
+                <div class="popup__form">
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <div>
+                            <label for="number">Номер телефона</label>
+                            <input type="tel" id="number" name="number" value="" required>
+                        </div>
+                        <div>
+                            <label for="email">Электронный адрес</label>
+                            <input type="email" id="email" name="email" value="" required>
+                        </div>
+                        <div>
+                            <label for="text">Дополнительная информация</label>
+                            <textarea id="text" name="text"></textarea>
+                        </div>
+                        <div class="popup__button">
+                            <button type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Таблица -->
+    <table id="table">
+        <caption>Запись на мастер-классы</caption>
+        <tr>
+            <th>Golang</th>
+            <th>C#</th>
+            <th>Python</th>
+            <th>C++</th>
+        </tr>
+        <tr>
+            <td><a href="#" class="popup-link">10:00</a></td>
+            <td><a href="#" class="popup-link">10:00</a></td>
+            <td><a href="#" class="popup-link">10:00</a></td>
+            <td><a href="#" class="popup-link">10:00</а></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="popup-link">12:00</a></td>
+            <td><a href="#" class="popup-link">12:00</a></td>
+            <td><a href="#" class="popup-link">12:00</a></td>
+            <td><a href="#" class="popup-link">12:00</а></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="popup-link">16:00</a></td>
+            <td><a href="#" class="popup-link">16:00</а></td>
+            <td><a href="#" class="popup-link">16:00</а></td>
+            <td><a href="#" class="popup-link">16:00</а></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="popup-link">18:00</а></td>
+            <td><a href="#" class="popup-link">18:00</а></td>
+            <td><a href="#" class="popup-link">18:00</а></td>
+            <td><a href="#" class="popup-link">18:00</а></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="popup-link">19:00</а></td>
+            <td><a href="#" class="popup-link">19:00</а></td>
+            <td><a href="#" class="popup-link">19:00</а></td>
+            <td><a href="#" class="popup-link">19:00</а></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="popup-link">20:00</а></td>
+            <td><a href="#" class="popup-link">20:00</а></td>
+            <td><a href="#" class="popup-link">20:00</а></td>
+            <td><a href="#" class="popup-link">20:00</а></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="popup-link">21:00</а></td>
+            <td><a href="#" class="popup-link">21:00</а></td>
+            <td><a href="#" class="popup-link">21:00</а></td>
+            <td><a href="#" class="popup-link">21:00</а></td>
+        </tr>
+    </table>
+
+    <div class="language-golang">
+        <h2>Golang</h2>
+        <p>Go, или Golang, — это компилируемый многопоточный язык с открытым исходным кодом. В основном его применяют в веб-сервисах и клиент-серверных приложениях. В конце 2021 года Golang даже вошёл в топ-5 востребованных языков и опередил PHP, C# и TypeScript.</p>
+        <p>Авторы языка попытались объединить лёгкость разработки на Python и эффективность C. Go использует отложенную сборку мусора и подход с определением состояния, а также системы параллельных вычислений на основе процессов. Это позволяет минимизировать накладные расходы и более эффективно использовать ресурсы.</p>
+    </div>
+
+    <div class="language-csharp">
+        <h2>C#</h2>
+        <p>C# — это язык программирования общего назначения. Он был разработан компанией Microsoft как часть их платформы .NET. С# похож на C++ и Java, но имеет свои особенности и улучшения.</p>
+        <p>Основные преимущества C#:</p>
+        <ul>
+            <li>Высокая производительность</li>
+            <li>Безопасность типов данных</li>
+            <li>Широкие возможности для разработки веб-приложений</li>
+        </ul>
+        <img src="img/csharp.jpg" alt="C# Image" class="img__csharp">
+    </div>
+
+    <div class="language-python">
+        <h2>Python</h2>
+        <p>Python — это высокоуровневый язык программирования, известный своей простотой и читаемостью кода. Он используется для веб-разработки, анализа данных, машинного обучения, автоматизации и многих других областей.</p>
+        <p>Основные преимущества Python:</p>
+        <ul>
+            <li>Простота изучения и использования</li>
+            <li>Большое сообщество и множество библиотек</li>
+            <li>Широкие возможности применения</li>
+            <li>Разработки веб-приложений — бэкенд на Python прост в поддержке и позволяет быстро вносить изменения.</li>
+            <li>Автоматизации — легко писать скрипты для автоматизации рутинных задач.</li>
+        </ul>
+        <p><a href="info.html">Поговорим подробнее об основных сферах его применения.</a></p>
+    </div>
+
+    <div class="language-cpp">
+        <h2>C++</h2>
+        <p>C++ — это сложный, но мощный язык программирования. Он является расширением языка C, добавляя объектно-ориентированные возможности. C++ используется для разработки высокопроизводительных приложений, системного программного обеспечения, игр и многого другого.</p>
+        <p>Основные преимущества C++:</p>
+        <ul>
+            <li>Высокая производительность</li>
+            <li>Контроль над использованием памяти</li>
+            <li>Широкие возможности для низкоуровневого программирования</li>
+        </ul>
+    </div>
+
+    <script>
+        // Открытие попапа
+        document.querySelectorAll('.popup-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('popup').style.display = 'flex';
+            });
+        });
+
+        // Закрытие попапа
+        document.querySelector('.popup__close').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('popup').style.display = 'none';
+        });
+
+        // Закрытие попапа при клике вне формы
+        document.getElementById('popup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

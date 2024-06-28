@@ -1,0 +1,155 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    background: url('../img/it.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Стили для заголовка */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+/* Стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Добавляем белый фон с небольшой прозрачностью */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    background-color: #fff; /* Белый непрозрачный фон для ячеек таблицы */
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Стили для попапа */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup__body {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.popup__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.popup__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.popup__form div {
+    margin-bottom: 15px;
+}
+
+.popup__button button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup__button button:hover {
+    background-color: #45a049;
+}
+
+.popup__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup__close:hover {
+    color: #4CAF50;
+}
+
+/* Стили для секций языка программирования */
+.language-golang, .language-csharp, .language-python, .language-cpp {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.language-csharp .img__csharp {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Стили для ссылок */
+.url {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.url:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .popup__body {
+        width: 90%;
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .popup__button button {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
